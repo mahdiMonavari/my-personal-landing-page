@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@utility bg-custom-orange {
+    background-image:
+        linear-gradient(to right, rgba(17, 17, 17, .5), rgba(17, 17, 17, .5)),
+        url('/public/images/hero.png');
+
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+}
