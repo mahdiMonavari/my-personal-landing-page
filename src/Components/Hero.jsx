@@ -19,9 +19,13 @@ function Hero() {
   }, [state]);
 
   return (
-    <div className="bg-primary">
-      <div className="h-screen container flex bg-custom-orange items-center">
-        <div className="">
+    <div className="bg-primary relative">
+      <div className="h-screen container flex bg-custom-orange items-center isolate">
+        <div
+          className="absolute bottom-0 -left-1/6 rounded-full w-[50%] h-[50%] bg-gradient-to-r
+         from-purple-700 via-blue-500 to-purple-700 opacity-15 blur-3xl"
+        ></div>
+        <div className="border-b border-zinc-100/50 pb-5">
           <h2
             className="text-start text-4xl bg-gradient-to-r from-purple-700 via-blue-500 to-purple-700 font-bold
         bg-clip-text text-transparent"
@@ -49,7 +53,7 @@ function Hero() {
           <h3 className="text-2xl text-zinc-400 max-w-100 text-start mt-4">
             Building clean, modern ,and responsive web experience
           </h3>
-          <h3 className="flex mt-10 animate-pulse">
+          <h3 className="flex mt-4 animate-pulse">
             <a
               className="text-3xl font-bold cursor-pointer bg-gradient-to-r from-pink-700 via-red-200 to-pink-700
                 bg-clip-text text-white hover:text-transparent transition-all duration-300"
