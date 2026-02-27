@@ -4,12 +4,11 @@ import Hero from "./Components/Hero";
 function App() {
   return (
     <div>
-      <section>
-        <TopBar />
-      </section>
+      <TopBar />
       <section id="HERO">
         <Hero />
       </section>
+      <section className="h-screen bg-primary" id="ABOUT ME"></section>
     </div>
   );
 }

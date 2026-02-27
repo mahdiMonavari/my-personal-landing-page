@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 @theme {
     --breakpoint-2xl: 1280px;
     --color-primary: rgb(6, 6, 7);
